@@ -12,5 +12,26 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "slugify": "^1.6.6"
-  }
+  },
+  "name": "uservendorapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surekhaBhas/UserVendorApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surekhaBhas/UserVendorApp/issues"
+  },
+  "homepage": "https://github.com/surekhaBhas/UserVendorApp#readme",
+  "description": ""
 }
